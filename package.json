@@ -19,8 +19,7 @@
         "Patrick Nagurny <patrick@bitpay.com>"
     ],
     "bin": {
-        "bitcore-node-zcoin": "./bin/bitcore-node-zcoin",
-        "zcoind": "./bin/zcoind"
+        "bitcore-node-zcoin": "./bin/bitcore-node-zcoin"
     },
     "scripts": {
         "test": "mocha -R spec --recursive",
