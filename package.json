@@ -4,27 +4,19 @@
     "author": "BitPay <dev@bitpay.com>",
     "version": "3.1.3",
     "main": "./index.js",
-    "repository": "git://github.com/sn-ntu/bitcore-node-zcoin.git",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/sn-ntu/bitcore-node-zcoin.git"
+    },
     "homepage": "https://github.com/sn-ntu/bitcore-node-zcoin",
     "bugs": {
         "url": "https://github.com/sn-ntu/bitcore-node-zcoin/issues"
     },
     "contributors": [
-        {
-            "name": "Christopher Jeffrey"
-        },
-        {
-            "name": "Braydon Fuller",
-            "email": "braydon@bitpay.com"
-        },
-        {
-            "name": "Chris Kleeschulte",
-            "email": "chrisk@bitpay.com"
-        },
-        {
-            "name": "Patrick Nagurny",
-            "email": "patrick@bitpay.com"
-        }
+        "Christopher Jeffrey",
+        "Braydon Fuller <braydon@bitpay.com>",
+        "Chris Kleeschulte <chrisk@bitpay.com>",
+        "Patrick Nagurny <patrick@bitpay.com>"
     ],
     "bin": {
         "bitcore-node-zcoin": "./bin/bitcore-node-zcoin",
@@ -35,7 +27,7 @@
         "regtest": "./scripts/regtest",
         "jshint": "jshint --reporter=node_modules/jshint-stylish ./lib",
         "coverage": "istanbul cover _mocha -- --recursive",
-        "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+        "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
     },
     "tags": [
         "zcoin",
@@ -77,5 +69,9 @@
         "rimraf": "^2.4.2",
         "sinon": "^1.15.4"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "directories": {
+        "doc": "docs",
+        "test": "test"
+    }
 }
